@@ -1,0 +1,14 @@
+.show-color {
+    /* display: block; */
+}
+
+.color-title {
+    /* font: 20px/120%; */
+}
+
+.color-sample {
+    width: 5em;
+    height: 3em;
+    margin: .2em auto;
+    border-radius: 50% 50%;
+}

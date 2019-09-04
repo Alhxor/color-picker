@@ -1,0 +1,30 @@
+form {
+    min-width: 50%;
+}
+
+fieldset {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+    border: 1px dashed hsla(0, 0%, 0%, 0.4);
+    min-width: 20em;
+    min-height: 3em;
+}
+
+input {
+    display: inline-block;
+    padding: 0 .4em;
+    margin: .25em .2em 0 0;
+    font: inherit;
+    vertical-align: middle;
+    height: 1.5em;
+}
+
+input[type="text"] {
+    width: 5em;
+}
+
+input[type="color"] {
+    width: 3em;
+}
