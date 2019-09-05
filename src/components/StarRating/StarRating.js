@@ -30,7 +30,10 @@ class StarRating extends React.Component {
                     key={i}
                     selected={i < this.props.starsSelected}
                     highlighted={i < this.state.starsHighlighted}
-                    onClick={() => this.props.onRatingChange(i+1)}
+                    onClick={() => {
+                        this.removeHighlighting();
+                        return this.props.onRatingChange(i+1);
+                    }}
                     onMouseOver={() => this.highlightAllStarsToTheLeft(i+1)}
                     onMouseOut={() => this.removeHighlighting()}
                 />
