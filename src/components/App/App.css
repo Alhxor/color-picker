@@ -1,9 +1,10 @@
 .App {
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 header, footer, main {
@@ -19,15 +20,18 @@ header, footer {
     color: white;
 }
 
+main {
+    flex: 1;
+    justify-content: flex-start;
+}
+
 header {
-    min-height: 25vh;
+    min-height: 20vh;
     font-size: 1.4em;
 }
 
 footer {
-    min-height: 10vh;
-    position: absolute;
-    bottom: 0;
+    min-height: 5vh;
 }
 
 .App-link {

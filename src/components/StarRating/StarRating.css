@@ -2,5 +2,5 @@
     display: flex;
     flex-direction: row;
     margin: 0.2em 0.5em;
-    cursor: pointer;
+    /* cursor: pointer; */
 }

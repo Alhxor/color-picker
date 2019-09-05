@@ -1,15 +1,26 @@
 .star {
-    background-color: silver;
     width: 1em;
     height: 1em;
+    cursor: pointer;
+}
+
+.star::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    margin-left: -50%;
+    left: 50%;
+    background: silver;
     clip-path: polygon(50% 0, 65% 35%, 100% 40%, 70% 60%, 80% 100%,
                         50% 70%, 20% 100%, 30% 60%, 0 40%, 35% 35%);
 }
 
-.selected {
+.selected::before {
     background-color: gold;
 }
 
-.highlighted {
+.highlighted::before {
     background-color: orange;
 }

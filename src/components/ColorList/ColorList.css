@@ -1,15 +1,18 @@
 ul {
     list-style-type: none;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
     width: 80%;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     margin: 0.2em 1em;
     display: inherit;
     flex-direction: column;
-    align-items: inherit;
-    justify-content: inherit;
+    align-items: center;
+    justify-content: center;
 }
