@@ -6,8 +6,8 @@ import './ColorList.css';
 
 const ColorList = ({
     colors,
-    rateColor = (...x) => x,
-    removeColor = (...x) => x
+    rateColor = x => x,
+    removeColor = x => x
 }) => (
     <ul>
         {colors.map(color => {

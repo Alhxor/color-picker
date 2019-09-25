@@ -5,13 +5,25 @@ jest.mock('../StarRating/StarRating');
 
 describe("<ColorList /> ui component", () => {
     let wrapper;
-    const _rate = jest.fn()
+    const _rate = jest.fn();
+    const _remove = jest.fn();
     beforeAll(() => {
-        wrapper = mount(<ColorList colors={_testColors} rateColor={_rate} />);
+        wrapper = mount(
+            <ColorList
+                colors={_testColors}
+                rateColor={_rate}
+                removeColor={_remove}
+            />
+        );
     });
 
     it("renders without crashing", () =>
         expect(wrapper.exists()).toBeTruthy());
+
+    it("doesn't crash with default arguments", () => {
+        const wraperDefault = shallow(<ColorList colors={[]} />)
+        expect(wrapper.exists()).toBeTruthy();
+    });
 
     it("renders three colors", () =>
         expect(wrapper
