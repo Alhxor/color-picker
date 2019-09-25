@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddColorForm /> matches snapshot 1`] = `
+<AddColorForm
+  addColor={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "",
+          "#000000",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <fieldset>
+      <legend>
+        Add a new color
+      </legend>
+      <div
+        className="formElementsContainer"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Color title"
+          type="text"
+        />
+        <input
+          onChange={[Function]}
+          type="color"
+        />
+        <input
+          type="submit"
+          value="Add"
+        />
+      </div>
+    </fieldset>
+  </form>
+</AddColorForm>
+`;

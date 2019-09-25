@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ColorList /> ui component matches snapshot 1`] = `
+<ColorList
+  colors={
+    Array [
+      Object {
+        "hexCode": "#aa0000",
+        "id": "testred",
+        "rating": 1,
+        "title": "red",
+      },
+      Object {
+        "hexCode": "#00aa00",
+        "id": "testgreen",
+        "rating": 4,
+        "title": "green",
+      },
+      Object {
+        "hexCode": "#0000aa",
+        "id": "testblue",
+        "rating": 3,
+        "title": "blue",
+      },
+    ]
+  }
+  rateColor={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "testred",
+        ],
+        Array [
+          "testgreen",
+        ],
+        Array [
+          "testblue",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <ul>
+    <li
+      key="testred"
+    >
+      <Color
+        hexCode="#aa0000"
+        removeColor={
+          Array [
+            "testred",
+          ]
+        }
+        title="red"
+      >
+        <div
+          className="show-color"
+        >
+          <span
+            className="color-title"
+          >
+            red
+          </span>
+          <span
+            className="remove-color"
+            onClick={
+              Array [
+                "testred",
+              ]
+            }
+          >
+            <FaTrash>
+              <IconBase
+                attr={
+                  Object {
+                    "viewBox": "0 0 448 512",
+                  }
+                }
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 448 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                    key="0"
+                  />
+                </svg>
+              </IconBase>
+            </FaTrash>
+          </span>
+          <div
+            className="color-sample"
+            style={
+              Object {
+                "backgroundColor": "#aa0000",
+              }
+            }
+          />
+        </div>
+      </Color>
+      <StarRatingMock
+        starsSelected={1}
+        totalStars={5}
+      >
+        <div
+          className="star-rating-mock"
+        >
+          <span
+            className="stars"
+          />
+          <span
+            className="selected"
+          />
+          <button
+            className="rate"
+          >
+            rate
+          </button>
+        </div>
+      </StarRatingMock>
+    </li>
+    <li
+      key="testgreen"
+    >
+      <Color
+        hexCode="#00aa00"
+        removeColor={
+          Array [
+            "testgreen",
+          ]
+        }
+        title="green"
+      >
+        <div
+          className="show-color"
+        >
+          <span
+            className="color-title"
+          >
+            green
+          </span>
+          <span
+            className="remove-color"
+            onClick={
+              Array [
+                "testgreen",
+              ]
+            }
+          >
+            <FaTrash>
+              <IconBase
+                attr={
+                  Object {
+                    "viewBox": "0 0 448 512",
+                  }
+                }
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 448 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                    key="0"
+                  />
+                </svg>
+              </IconBase>
+            </FaTrash>
+          </span>
+          <div
+            className="color-sample"
+            style={
+              Object {
+                "backgroundColor": "#00aa00",
+              }
+            }
+          />
+        </div>
+      </Color>
+      <StarRatingMock
+        starsSelected={4}
+        totalStars={5}
+      >
+        <div
+          className="star-rating-mock"
+        >
+          <span
+            className="stars"
+          />
+          <span
+            className="selected"
+          />
+          <button
+            className="rate"
+          >
+            rate
+          </button>
+        </div>
+      </StarRatingMock>
+    </li>
+    <li
+      key="testblue"
+    >
+      <Color
+        hexCode="#0000aa"
+        removeColor={
+          Array [
+            "testblue",
+          ]
+        }
+        title="blue"
+      >
+        <div
+          className="show-color"
+        >
+          <span
+            className="color-title"
+          >
+            blue
+          </span>
+          <span
+            className="remove-color"
+            onClick={
+              Array [
+                "testblue",
+              ]
+            }
+          >
+            <FaTrash>
+              <IconBase
+                attr={
+                  Object {
+                    "viewBox": "0 0 448 512",
+                  }
+                }
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  strokeWidth="0"
+                  style={
+                    Object {
+                      "color": undefined,
+                    }
+                  }
+                  viewBox="0 0 448 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                    key="0"
+                  />
+                </svg>
+              </IconBase>
+            </FaTrash>
+          </span>
+          <div
+            className="color-sample"
+            style={
+              Object {
+                "backgroundColor": "#0000aa",
+              }
+            }
+          />
+        </div>
+      </Color>
+      <StarRatingMock
+        starsSelected={3}
+        totalStars={5}
+      >
+        <div
+          className="star-rating-mock"
+        >
+          <span
+            className="stars"
+          />
+          <span
+            className="selected"
+          />
+          <button
+            className="rate"
+          >
+            rate
+          </button>
+        </div>
+      </StarRatingMock>
+    </li>
+  </ul>
+</ColorList>
+`;

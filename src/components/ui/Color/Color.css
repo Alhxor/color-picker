@@ -6,6 +6,12 @@
     /* font: 20px/120%; */
 }
 
+.remove-color {
+    font-size: .75em;
+    color: rgba(200, 0, 0, 0.8);
+    margin: 0 .25em;
+}
+
 .color-sample {
     width: 5em;
     height: 3em;

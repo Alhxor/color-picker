@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './AddColorForm.css';
 
-class AddColorForm extends React.Component {
-    constructor(props) {
-        super(props);
-        this.onNewColor = props.onNewColor;
+class AddColorForm extends Component {
+    constructor() {
+        super();
         this.state = {
-            title: '',
-            hexCode: '#000000',
+            title: "",
+            hexCode: "#000000",
         };
     }
 
-    onChangeInput = stateKey => ({ target }) => {
+    updateInput = stateKey => ({ target }) => {
         this.setState({
             [stateKey]: target.value,
         });
@@ -21,7 +20,7 @@ class AddColorForm extends React.Component {
     onSubmit = (event) => {
         event.preventDefault();
         const { title, hexCode } = this.state;
-        this.onNewColor({ title, hexCode });
+        this.props.addColor(title, hexCode);
     }
 
     render = () => (
@@ -30,8 +29,9 @@ class AddColorForm extends React.Component {
                 <legend>Add a new color</legend>
                 <div className="formElementsContainer">
                     <input type="text" placeholder="Color title"
-                        onChange={this.onChangeInput('title')} />
-                    <input type="color" onChange={this.onChangeInput('hexCode')} />
+                        onChange={this.updateInput('title')} />
+                    <input type="color"
+                        onChange={this.updateInput('hexCode')} />
                     <input type="submit" value="Add" />
                 </div>
             </fieldset>
@@ -40,7 +40,7 @@ class AddColorForm extends React.Component {
 }
 
 AddColorForm.propTypes = {
-    onNewColor: PropTypes.func.isRequired,
+    addColor: PropTypes.func.isRequired,
 };
 
 export default AddColorForm;
